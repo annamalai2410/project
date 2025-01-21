@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header{
+            height: 60px;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color: rgb(29, 30, 44);
+        }
+        #ama{
+           margin-top: 8px;
+            font-size: 30px;
+        }
+        h2{
+            display: flex;
+            align-content: center;
+            padding-top: 8px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        input{
+            height: 30px;
+            width: 300px;
+            margin-top: 13px;
+            border: none;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+        button{
+            height: 30px;
+            width: 40px;
+            border: none;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background-color: rgb(211, 149, 34);
+        }
+        select{
+            font-size: 18px;
+            background: none;
+            border: none;
+            color: aliceblue;
+            padding: 10px;
+        }
+        option{
+            background-color: blue;
+        }
+        select::selection{
+            color: black;
+        }
+        .up{
+            color: aliceblue;
+            padding:18px ;
+            font-size: 20px;
+        }
+        .up:hover{
+            color: rgb(211, 149, 34);
+        }
+        
+       footer{
+        background-color:rgb(52, 52, 92) ;
+        width: 100%;
+        height: 570px;
+        border-top: 5px solid rgb(211, 149, 34);
+       }
+       #foot{
+        text-align: center;
+        padding-top: 30px;
+        font-size: 50px;
+        color: aliceblue;
+       }
+       #foo {
+        display: flex;
+        justify-content: space-around;
+        color: aliceblue;
+       }
+       #foo a{
+        color: aliceblue;
+       }
+       .foot1{
+        line-height: 28px;
+        margin: 30px 10px;
+        width: 170px;
+        height: 280px;
+       }
+       .foot2{
+        border-top: 1px solid rgba(240, 248, 255, 0.515);
+        padding: 45px;
+        text-align: center;
+        color: aliceblue;
+       }
+       #contain{
+        background-repeat:no-repeat ;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 620px; 
+        position: relative;
+       }
+       video{
+        position: absolute;
+        width: 1090px;
+        z-index: -1;
+        height: 620px;
+       }
+       #c{
+        position: relative;
+        top: 150px;
+        left: 380px;
+        width: 400px;
+        height: 200px;
+       }
+       #c button{
+        margin:50px 0px 0px 90px ;
+        background-color: rgb(104, 202, 74);
+        border-radius: 20px;
+        width: 140px;
+        color: aliceblue;
+        font-weight: 700;
+        height: 35px;
+        padding-bottom: 3px;
+        }
+        #c p{
+            color: rgb(255, 170, 0);
+            font-size: 40px;
+            font-weight: 900;
+        }
+        #c button:hover{
+            width: 170px;
+            height: 45px;
+        margin:40px 0px 0px 80px ;
+        font-size:15px ;
+        color: rgb(134, 51, 134);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="ama"> amazon</h1>
+        <a class="up" href="address.html"> address <i class="fa-solid fa-location-dot"> </i> </a>
+     
+        <div>
+            <input type="text"><button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <select name="" id="">
+            <option value="">English</option>
+            <option value="">tamil</option>
+            <option value="">hindi</option>
+        </select>
+        <a class="up" href="project.html">Sign in <i class="fa-solid fa-user"></i></a>
+        <a class="up" href="orders.html">Orders <i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+   
+
+    <div id="contain">
+             <video autoplay loop muted >
+                <source src="images/istockphoto-1127249201-640_adpp_is.mp4">
+             </video>
+             <div id="c">
+                <p>Order Succesfull</p>
+                <a href="shop.html">
+                    <button>Continue Shopping</button>
+                </a>
+             </div>
+    </div>
+  
+    <footer>
+        <div id="foot"><i class="fa-brands fa-aws"></i></div>
+        <div id="foo">
+            <div class="foot1">
+                <h4>Get to know us</h4>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Press Release</p>
+                <p>Amazon science</p>
+            </div>
+            <div class="foot1">
+                <h4>Connect with Us </h4>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+            </div>
+            <div class="foot1">
+                <h4>Make money with Us</h4>
+                <a href="">Sell on Amazon</a>
+                <a href="">Sell under Amazon Accelerator</a>
+                <a href="">Protect ana Build Your Brand</a>
+                <a href="">Amazon Global Selling</a>
+                <a href="">Supply to Amazon</a>
+                <a href="">Become an Affiliate</a>
+                <a href="">Advertise Your products</a>
+            </div>
+            <div class="foot1">
+                <h4>Let Us Help You</h4>
+                <a href="">Your Account</a>
+                <a href="">Returns Centre</a>
+                <a href="">100% Purchase Protection</a>
+                <a href="">Amazon App Download</a>
+                <a href="">Help</a>
+            </div>
+        </div>
+        <div class="foot2">
+            <p> Conditions of Use & Sale   privacy  interest based Ads</p>
+            <p> 1996-2024,Amazon,Inc. or its affiliates.</p>
+        </div>   
+    </footer>
+</body>
+</html>

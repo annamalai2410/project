@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header{
+            height: 60px;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color: rgb(29, 30, 44);
+        }
+        #ama{
+           margin-top: 8px;
+            font-size: 30px;
+        }
+        h2{
+            display: flex;
+            align-content: center;
+            padding-top: 8px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        input{
+            height: 30px;
+            width: 300px;
+            margin-top: 13px;
+            border: none;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+        button{
+            height: 30px;
+            width: 40px;
+            border: none;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background-color: rgb(211, 149, 34);
+        }
+        select{
+            font-size: 18px;
+            background: none;
+            border: none;
+            color: aliceblue;
+            padding: 10px;
+        }
+        option{
+            background-color: blue;
+        }
+        select::selection{
+            color: black;
+        }
+        .up{
+            color: aliceblue;
+            padding:18px ;
+            font-size: 20px;
+        }
+        .up:hover{
+            color: rgb(211, 149, 34);
+        }
+        nav{
+            height: 30px;
+            position: sticky;
+            top: 0px;
+            background-color: aliceblue;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            border-bottom:1px solid ;
+        }
+        li{
+            padding: 5px;
+            list-style: none;
+           
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        li:hover a{
+            color:rgb(211, 149, 34) ;  
+        }
+       li:hover {
+        border-bottom: 2px solid rgb(211, 149, 34);
+       }
+       marquee{
+        background-color: rgb(155, 100, 17);
+        height: 40px;
+       }
+       .mar{
+        display: inline-block;
+        padding: 10px;
+        color: aliceblue;
+       }
+       footer{
+        background-color:rgb(52, 52, 92) ;
+        width: 100%;
+        height: 570px;
+        border-top: 5px solid rgb(211, 149, 34);
+       }
+       #foot{
+        text-align: center;
+        padding-top: 30px;
+        font-size: 50px;
+        color: aliceblue;
+       }
+       #foo {
+        display: flex;
+        justify-content: space-around;
+        color: aliceblue;
+       }
+       #foo a{
+        color: aliceblue;
+       }
+       .foot1{
+        line-height: 28px;
+        margin: 30px 10px;
+        width: 170px;
+        height: 280px;
+       }
+       .foot2{
+        border-top: 1px solid rgba(240, 248, 255, 0.515);
+        padding: 45px;
+        text-align: center;
+        color: aliceblue;
+       }
+       #contain{
+        margin-top: 4px;
+        border-top: 25px solid rgba(0, 0, 0, 0.376);
+        border-bottom: 25px solid rgba(0, 0, 0, 0.376);
+        background-color:rgb(255, 255, 255) ;
+        width: 100%;
+        height: 400px; 
+       }
+       #c1{
+        margin-top: 20px;
+        margin-left:15% ;
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: 350px;
+        box-shadow: 0px 0px 30px ;
+       }
+       #c1 img{
+        margin-right: 40px;
+        height: 350px;
+        margin-bottom: 30px;
+       }
+     aside{
+    padding-left: 20px;
+        width: 300px;
+     }
+     h3{
+        font-size: 30px;
+     }
+     p{
+        margin-top:10px ;
+        font-size: 20px;
+     }
+     #bt1{
+        font-weight: 600;
+        margin:30px 0px 10px 60px ;
+        width: 150px;
+        border-radius: 100px;
+     }
+     #bt2{
+        font-weight: 600;
+        margin:10px 60px;
+        width: 150px;
+        border-radius: 100px;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="ama"> amazon</h1>
+        <a class="up" href="address.html"> address <i class="fa-solid fa-location-dot"> </i> </a>
+     
+        <div>
+            <input type="text"><button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <select name="" id="">
+            <option value="">English</option>
+            <option value="">tamil</option>
+            <option value="">hindi</option>
+        </select>
+        <a class="up" href="project.html">Sign in <i class="fa-solid fa-user"></i></a>
+        <a class="up" href="orders.html">Orders <i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+        <marquee  behavior="" direction="">
+            <div class="mar">  <h4>AMAZON BIG  BILLON  SALE</h4></div><div class="mar">  <h4>UPTO 80% OFFER ON EVERTHING YOU PURCHASE</h4></div> <div class="mar">  <h4>OFFERS ONLY FROM 15TH AUG TO 30TH AUG</h4></div>
+            <div class="mar">  <h4>AMAZON BIG  BILLON  SALE</h4></div><div class="mar">  <h4>UPTO 80% OFFER ON EVERTHING YOU PURCHASE</h4></div> <div class="mar">  <h4>OFFERS ONLY FROM 15TH AUG TO 30TH AUG</h4></div>
+            <div class="mar">  <h4>AMAZON BIG  BILLON  SALE</h4></div><div class="mar">  <h4>UPTO 80% OFFER ON EVERTHING YOU PURCHASE</h4></div> <div class="mar">  <h4>OFFERS ONLY FROM 15TH AUG TO 30TH AUG</h4></div>
+         </marquee>
+    <nav>
+        <ul>
+            <li><a href="s_best.html">Best Sellers</a></li>
+            <li><a href="s_fresh.html">Fresh</a></li>
+            <li><a href="s_mob.html">Mobiles</a></li>
+            <li><a href="s_fas.html">Fashion</a></li>
+            <li><a href="s_ele.html">Electronics</a></li>
+            <li><a href="s_cos.html">Customer Service</a></li>
+        </ul>
+    </nav>
+
+    <div id="contain">
+        <div id="c1">
+            <article>
+                <img src="images/wa.webp" alt="">
+            </article>
+            <aside>
+                <h3>Apple Iphone 15(128GB)</h3>
+                <p class="p2"> &#x20b9  80,599 <del><sup> &#x20b9  90,000</sup> </del></p>
+                <p> EMI available</p>
+                <p> Cash on Delivery available</p>
+                 
+                </select>
+                <a href="order.html"><button id="bt1"> Buy Now</button>    </a>
+                <a href="s_ele.html"><button id="bt2"> Back</button></a>
+                
+            </aside>
+        </div>   
+    </div>
+  
+    <footer>
+        <div id="foot"><i class="fa-brands fa-aws"></i></div>
+        <div id="foo">
+            <div class="foot1">
+                <h4>Get to know us</h4>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Press Release</p>
+                <p>Amazon science</p>
+            </div>
+            <div class="foot1">
+                <h4>Connect with Us </h4>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+            </div>
+            <div class="foot1">
+                <h4>Make money with Us</h4>
+                <a href="">Sell on Amazon</a>
+                <a href="">Sell under Amazon Accelerator</a>
+                <a href="">Protect ana Build Your Brand</a>
+                <a href="">Amazon Global Selling</a>
+                <a href="">Supply to Amazon</a>
+                <a href="">Become an Affiliate</a>
+                <a href="">Advertise Your products</a>
+            </div>
+            <div class="foot1">
+                <h4>Let Us Help You</h4>
+                <a href="">Your Account</a>
+                <a href="">Returns Centre</a>
+                <a href="">100% Purchase Protection</a>
+                <a href="">Amazon App Download</a>
+                <a href="">Help</a>
+            </div>
+        </div>
+        <div class="foot2">
+            <p> Conditions of Use & Sale   privacy  interest based Ads</p>
+            <p> 1996-2024,Amazon,Inc. or its affiliates.</p>
+        </div>   
+    </footer>
+</body>
+</html>
